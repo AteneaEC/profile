@@ -1,0 +1,236 @@
+.word-break-all {
+  word-break: break-all !important;
+}
+
+.alert-info {
+  background-color: #b3b3b3;
+  color: inherit;
+  border-radius: 0;
+  height: 89%;
+}
+
+.profile-page .alert-link {
+  background-color: #3fa9f5;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  float: right;
+}
+
+.page-title {
+  font-weight: lighter;
+  border-bottom: 2px solid #3fa9f5;
+  margin-bottom: 40px;
+}
+
+.date-profile {
+  color: #3fa9f5;
+}
+
+.col-auto.col-md-4.col-lg-3 {
+  border-bottom: 2px solid #3fa9f5;
+}
+
+main {
+  background-color: #f2f2f2;
+  padding-top: 60px;
+}
+
+.box-profile {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #3fa9f5;
+  background-color: white;
+}
+
+@media (min-width: 1200px) {
+  .container-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+// TODO: Update edx-bootstrap theme to incorporate these edits.
+.btn,
+a.btn {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.username-description {
+  width: auto;
+  position: absolute;
+  left: 1.5rem;
+  top: 5.25rem;
+  color: $gray-500;
+  line-height: 0.9rem;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 0.9rem;
+}
+
+.mb-2rem {
+  margin-bottom: 2rem;
+}
+
+.icon-visibility-off {
+  height: 1rem;
+  color: $gray-500;
+}
+
+.profile-page {
+  .edit-section-header {
+    @extend .h6;
+    display: block;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  label.edit-section-header {
+    margin-bottom: $spacer * .5;
+  }
+
+  .profile-avatar-wrap {
+    @include media-breakpoint-up(md) {
+      max-width: 12rem;
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .profile-avatar-menu-container {
+    background: rgba(0, 0, 0, .65);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    @include media-breakpoint-up(md) {
+      background: linear-gradient(to top, rgba(0, 0, 0, .65) 4rem, rgba(0, 0, 0, 0) 4rem);
+      align-items: flex-end;
+    }
+
+    .btn {
+      text-decoration: none;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    .dropdown {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 1.2rem;
+      }
+
+      .btn {
+        color: $white;
+        background: transparent;
+        border-color: transparent;
+        margin: 0;
+      }
+    }
+  }
+
+  .profile-avatar {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    .profile-avatar-edit-button {
+      border: none;
+      position: absolute;
+      height: 100%;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      padding-top: .1rem;
+      font-weight: 600;
+      background: rgba(0, 0, 0, .5);
+      border-radius: 0;
+      transition: opacity 200ms ease;
+
+      @include media-breakpoint-up(md) {
+        height: 4rem;
+      }
+
+      &:focus,
+      &:hover,
+      &:active,
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .certificate {
+    position: relative;
+
+    .certificate-title {
+      font-family: $font-family-serif;
+      font-weight: 400;
+    }
+
+    .certificate-type-illustration {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      bottom: 0;
+      width: 12rem;
+      opacity: .06;
+      background-size: 90%;
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+
+    .card-body {
+      position: relative;
+    }
+  }
+
+  .share-button {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px;
+  }
+
+  .profile-shared {
+    text-transform: uppercase;
+  }
+
+  .margin{
+    margin-top: 92px !important;
+  }
+
+  .no-margin {
+    margin: 0 !important;
+    color: $accent-a;
+    font-weight: 500;
+  }
+}

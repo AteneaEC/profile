@@ -1,0 +1,68 @@
+.wrapper-footer {
+  background: #285B83;
+  background: -moz-linear-gradient(30deg, #285B83 50%, #2c628a 50%);
+  background: -webkit-linear-gradient(30deg, #285B83 50%, #285B83 50%);
+  background: linear-gradient(30deg, #285B83 50%, #2c628a 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#285B83', endColorstr='#2c628a', GradientType=1);
+  color: white;
+  position: absolute;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.wrapper-footer a {
+  color: white;
+}
+
+.copyright a {
+  color: white !important;
+}
+
+.wrapper-footer a:hover,
+.copyright a:hover {
+  text-decoration: none;
+}
+
+.wrapper-footer .row {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.wrapper-footer .last-col {
+  border-left: 1px solid white;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.wrapper-footer footer .social {
+  display: flex;
+}
+
+.wrapper-footer footer .social a {
+  color: #00acd7;
+  background-color: white;
+  border-radius: 5px;
+  height: 44px;
+  width: 44px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 9px;
+}
+
+.wrapper-footer footer .social a:hover {
+  color: white;
+  background-color: #00acd7;
+  text-decoration: none;
+}
+
+.footer-about-openedx {
+  width: 140px;
+  height: 50px;
+  background-image: url('./logo_foot_01.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
