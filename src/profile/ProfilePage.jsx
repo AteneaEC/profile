@@ -28,7 +28,7 @@ import SocialLinks from './forms/SocialLinks';
 import Bio from './forms/Bio';
 import Certificates from './forms/Certificates';
 import AgeMessage from './AgeMessage';
-import DateJoined from './DateJoined';
+// import DateJoined from './DateJoined';
 import UsernameDescription from './UsernameDescription';
 import PageLoading from './PageLoading';
 
@@ -139,17 +139,17 @@ class ProfilePage extends React.Component {
     );
   }
 
-  renderHeadingLockup2() {
-    const { dateJoined } = this.props;
+  // renderHeadingLockup2() {
+  //   const { dateJoined } = this.props;
 
-    return (
-      <span data-hj-suppress>
-        <h1 className="h2 mb-0 font-weight-bold name-profile">{this.props.match.params.username}</h1>
-        <DateJoined date={dateJoined} />
-        {this.isYOBDisabled() && <UsernameDescription />}
-      </span>
-    );
-  }
+  //   return (
+  //     <span data-hj-suppress>
+  //       <h1 className="h2 mb-0 font-weight-bold name-profile">{this.props.match.params.username}</h1>
+  //       <DateJoined date={dateJoined} />
+  //       {this.isYOBDisabled() && <UsernameDescription />}
+  //     </span>
+  //   );
+  // }
 
   renderPhotoUploadErrorMessage() {
     const { photoUploadError } = this.props;
