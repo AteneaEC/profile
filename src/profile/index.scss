@@ -31,6 +31,10 @@
   border-bottom: 2px solid #3fa9f5;
 }
 
+.col-auto.col-md-4.col-lg-12.d-flex.flex-row {
+  border-bottom: 2px solid #3fa9f5;
+}
+
 main {
   background-color: #f2f2f2;
   padding-top: 60px;
@@ -41,6 +45,7 @@ main {
   padding: 10px;
   border: 2px solid #3fa9f5;
   background-color: white;
+  width: 100% !important;
 }
 
 @media (min-width: 1200px) {
@@ -224,7 +229,7 @@ a.btn {
     text-transform: uppercase;
   }
 
-  .margin{
+  .margin {
     margin-top: 92px !important;
   }
 

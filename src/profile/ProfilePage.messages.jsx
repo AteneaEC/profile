@@ -11,6 +11,11 @@ const messages = defineMessages({
     defaultMessage: 'Profile loading...',
     description: 'Message displayed when the profile data is loading.',
   },
+  'profile.name.full.name': {
+    id: 'profile.name.full.name',
+    defaultMessage: 'Full Name',
+    description: 'profile full name text',
+  },
 });
 
 export default messages;

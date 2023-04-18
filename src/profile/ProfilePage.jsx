@@ -28,7 +28,7 @@ import SocialLinks from './forms/SocialLinks';
 import Bio from './forms/Bio';
 import Certificates from './forms/Certificates';
 import AgeMessage from './AgeMessage';
-// import DateJoined from './DateJoined';
+import DateJoined from './DateJoined';
 import UsernameDescription from './UsernameDescription';
 import PageLoading from './PageLoading';
 
@@ -132,24 +132,26 @@ class ProfilePage extends React.Component {
   renderHeadingLockup() {
     return (
       <span data-hj-suppress>
-        <p className="no-margin">Nombre Completo</p>
+        <p className="no-margin">
+          {this.props.intl.formatMessage(messages['profile.name.full.name'])}
+        </p>
         <h1 className="h2 mb-0 font-weight-bold name-profile">{this.props.match.params.username}</h1>
         {this.isYOBDisabled() && <UsernameDescription />}
       </span>
     );
   }
 
-  // renderHeadingLockup2() {
-  //   const { dateJoined } = this.props;
+  renderHeading2() {
+    const { dateJoined } = this.props;
 
-  //   return (
-  //     <span data-hj-suppress>
-  //       <h1 className="h2 mb-0 font-weight-bold name-profile">{this.props.match.params.username}</h1>
-  //       <DateJoined date={dateJoined} />
-  //       {this.isYOBDisabled() && <UsernameDescription />}
-  //     </span>
-  //   );
-  // }
+    return (
+      <span data-hj-suppress>
+        <h1 className="h2 mb-0 font-weight-bold name-profile">{this.props.match.params.username}</h1>
+        <DateJoined date={dateJoined} />
+        {this.isYOBDisabled() && <UsernameDescription />}
+      </span>
+    );
+  }
 
   renderPhotoUploadErrorMessage() {
     const { photoUploadError } = this.props;
@@ -216,7 +218,7 @@ class ProfilePage extends React.Component {
 
         <div className="row margin">
           <div className="col-md-6">
-            <div className="col-auto col-md-4 col-lg-12">
+            <div className="col-auto col-md-4 col-lg-12 d-flex flex-row">
               <div className="d-flex align-items-center">
                 <ProfileAvatar
                   className="mb-md-3"
@@ -228,7 +230,9 @@ class ProfilePage extends React.Component {
                   isEditable={this.isAuthenticatedUserProfile() && !requiresParentalConsent}
                 />
               </div>
-
+              <div className="d-flex align-items-start ml-5">
+                {this.renderHeading2()}
+              </div>
             </div>
             <div className="col pl-0">
               <div className="d-md-none">
