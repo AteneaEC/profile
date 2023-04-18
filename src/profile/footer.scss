@@ -68,37 +68,38 @@
 }
 
 @media (max-width: 575px) {
-  .wrapper-footer{
-    footer{
-      .row{
+  .wrapper-footer {
+    footer {
+      .row {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
         text-align: center;
-        .col-sm{
+        .col-sm {
           display: flex;
           flex-direction: column;
           flex-basis: 100%;
           flex: 1;
         }
       }
-      .social{
+      .social {
         justify-content: center;
       }
     }
-    .last-col{
+    .last-col {
       text-align: center;
       border: none;
+      border-left: 0;
     }
   }
 
   .wrapper-footer .list-unstyled,
-  .wrapper-footer .last-col{
+  .wrapper-footer .last-col {
     padding: 0;
   }
 
-  .footer-about-openedx{
+  .footer-about-openedx {
     margin: 0 auto;
   }
 }

@@ -219,7 +219,7 @@ class ProfilePage extends React.Component {
         <div className="row margin">
           <div className="col-md-6">
             <div className="col-auto col-md-4 col-lg-12 d-flex flex-row">
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center mb-3">
                 <ProfileAvatar
                   className="mb-md-3"
                   src={profileImage.src}
