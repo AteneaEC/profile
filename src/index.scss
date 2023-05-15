@@ -2222,3 +2222,18 @@
   .fa-meetup:before{
     content:"";
   }
+
+  @media (max-width:576px) {
+    .site-header-mobile img{
+      height: 40px;
+    }
+
+    .page-title{
+      margin: 0 10px;
+    }
+
+    .profile-page .share-button{
+      position: relative;
+      padding: 0;
+    }
+  }
